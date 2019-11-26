@@ -1,0 +1,98 @@
+$tcolor: white;
+$bgcolor: #092B40;
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: $bgcolor;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+  width: 900px;
+  margin: 70px auto;
+}
+
+#header{
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+
+  a{
+    text-decoration: none;
+    color: $tcolor;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    display: block;
+  }
+
+  input{
+    background: $bgcolor;
+    border: 3px solid $tcolor;
+    height: 40px;
+    color: $tcolor;
+    box-shadow: 0;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+    border-radius: 40px;
+    font-size: 1.5em;
+    outline: none;
+  }
+}
+
+#submit{
+  color: $tcolor;
+  padding: 9px;
+  align-self: baseline;
+  background: $bgcolor;
+  border: 3px solid $tcolor;
+  border-radius: 50px;
+  font-size: 1.4em;
+  outline: none;
+  &:hover{
+    color: white;
+    background: yellowgreen;
+  }
+}
+#main-content div{
+  background-color: #f2f2f2;
+  padding: 10px 30px;
+  margin: 10px 0px 0px auto;
+  color: black;
+  width: 890px;
+  display: none;
+  float: right;
+  
+  p{
+    padding-bottom: 5px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  }
+  
+  h3{
+    padding-bottom: 5px;
+  }
+  
+  &:hover{
+    border-left: 10px solid red;
+    background: pink;
+  }
+}
+
+h1{
+  font-size: 3em;
+}
+#footer{
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}

@@ -1,0 +1,31 @@
+.display {
+  z-index: 5;
+  border: 5px dashed black;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+button {
+  border: none;
+  background: white;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+.col-4 {
+  height: 60px;
+}
+
+.progress {
+  border-radius: 0;
+}
+
+.noEdit .col-4 button {
+  display: none;
+}

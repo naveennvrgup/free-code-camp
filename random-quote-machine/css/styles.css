@@ -1,0 +1,42 @@
+body{
+  background: slateblue;
+  color: slateblue;
+  transition: 0.5s ease;
+}
+.wrapper{
+  background: white;
+  width: 550px;
+  margin: 150px auto 15px;
+  font-size: 150%;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#quote{
+  text-align: center;
+}
+#author{
+  text-align: right;
+}
+#btn{
+  text-decoration: none;
+  padding: 10px;
+  background: slateblue;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
+  border-radius: 4px; 
+  float: right;
+}
+
+#tweet{
+  background: slateblue;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+body p{
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
