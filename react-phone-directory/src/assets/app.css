@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    font-family: 'raleway';
+}
+
+.App {
+    max-width: 500px;
+    min-height: 80vh;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 1em;
+}
+
+.state {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    padding: 2em;
+    background: pink;
+}
+.state span{
+    font-weight: bold;
+}
