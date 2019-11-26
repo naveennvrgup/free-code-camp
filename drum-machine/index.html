@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Drum Machine</title>
+    <!-- links -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h2 class="text-center font-weight-bold pt-5">FCC-Drumbox</h2>
+    <p class="m-0 text-center pb-5">(We The Best Music presents)</p>
+    <div id="display">#####</div>
+    <div id="drum-machine" class="text-center">
+        <div class="p-1">
+            <button data-key="Q" id="boom" class="drum-pad">
+                Q
+                <audio src="sounds/boom.wav" class="clip" id="Q" data-sound="boom"></audio>
+            </button>
+            <button data-key="W" id="clap" class="drum-pad">
+                W
+                <audio src="sounds/clap.wav" class="clip" id="W" data-sound="clap"></audio>
+            </button>
+            <button data-key="E" id="hihat" class="drum-pad">
+                E
+                <audio src="sounds/hihat.wav" class="clip" id="E" data-sound="hihat"></audio>
+            </button>
+        </div>
+        <div class="p-1">
+            <button data-key="A" id="kick" class="drum-pad">
+                A
+                <audio src="sounds/kick.wav" class="clip" id="A" data-sound="kick"></audio>
+            </button>
+            <button data-key="S" id="openhat" class="drum-pad">
+                S
+                <audio src="sounds/openhat.wav" class="clip" id="S" data-sound="openhat"></audio>
+            </button>
+            <button data-key="D" id="ride" class="drum-pad">
+                D
+                <audio src="sounds/ride.wav" class="clip" id="D" data-sound="ride"></audio>
+            </button>
+        </div>
+        <div class="p-1">
+            <button data-key="Z" id="snare" class="drum-pad">
+                Z
+                <audio src="sounds/snare.wav" class="clip" id="Z" data-sound="snare"></audio>
+            </button>
+            <button data-key="X" id="tink" class="drum-pad">
+                X
+                <audio src="sounds/tink.wav" class="clip" id="X" data-sound="tink"></audio>
+            </button>
+            <button data-key="C" id="tom" class="drum-pad">
+                C
+                <audio src="sounds/tom.wav" class="clip" id="C" data-sound="tom"></audio>
+            </button>
+        </div>
+        <!-- footer -->
+        <footer>
+            <p>#naveennvrgup</p>
+        </footer>
+    </div>
+    <!-- scripts -->
+    <script src="fcc-check.js"></script>
+    <script>
+        // functions
+        function triggerSound(e, button) {
+            if (e) {
+                button = document.querySelector(`button[data-key="${e.key.toUpperCase()}"]`)
+            }
+            // get the audio element
+            if (!button) return
+            var audio = button.querySelector('audio')
+            // play the audio
+            audio.currentTime = 0
+            audio.play()
+            // update the display
+            display.innerText = button.id
+            // add the animation class
+            button.classList.add('keypress')
+        }
+
+        function removeAnimationClass(e) {
+            if (e.propertyName !== "background-color") return
+            // remove the animation class
+            this.classList.remove('keypress')
+        }
+
+        var display = document.querySelector('#display');
+        var buttons = document.querySelectorAll('button');
+
+        window.addEventListener('keydown', triggerSound)
+        buttons.forEach(button => {
+            button.addEventListener('click', function (e) {
+                if (!this.dataset.key) return
+                triggerSound(null, e.srcElement)
+            })
+            button.addEventListener('transitionend', removeAnimationClass)
+        })
+    </script>
+</body>
+
+</html>

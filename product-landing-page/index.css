@@ -1,0 +1,36 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+#header-img {
+    width: 80px;
+    margin: 10px 0px 10px 60px;
+}
+
+header a {
+    font-weight: bold;
+    color: #000;
+}
+
+header {
+    background: yellowgreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+footer {
+    background: black;
+}
+
+[type='email']{
+    width: 400px;
+    margin: auto;
+}
