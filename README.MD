@@ -8,7 +8,7 @@ My fcc handle is - [**naveensundar@fcc**](https://www.freecodecamp.org/fcc4875e2
 
 ## My fcc certifications:
 1. [Responsive Web Design Certification](https://www.freecodecamp.org/certification/fcc4875e22d-b42b-4889-ba8c-cfa9860187ac/responsive-web-design)
-1. [JavaScript Algorithms and Data Structures Certification]("https://www.freecodecamp.org/certification/fcc4875e22d-b42b-4889-ba8c-cfa9860187ac/javascript-algorithms-and-data-structures)
+1. [JavaScript Algorithms and Data Structures Certification](https://www.freecodecamp.org/certification/fcc4875e22d-b42b-4889-ba8c-cfa9860187ac/javascript-algorithms-and-data-structures)
 1. [Front End Libraries Certification](https://www.freecodecamp.org/certification/fcc4875e22d-b42b-4889-ba8c-cfa9860187ac/front-end-libraries)
 
 ## React projects:
