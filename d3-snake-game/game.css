@@ -1,12 +1,34 @@
+*{
+    font-family: sans-serif;
+}
+
 #snake-game{
     background: #ddd;
     width: 450px;
     height: 450px;
+    margin: 0px auto;
 }
 
-.circle{
-    fill: red;
+.center{
+    text-align: center;
 }
 
-.cell{
+.buttons{
+    width: 450px;
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#start_stop_btn{
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: green;
+    padding: 5px 10px;
+}
+
+stop{
+    background: red;
 }

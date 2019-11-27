@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,26 @@
     <title>D3-snake-game</title>
     <link rel="stylesheet" href="./game.css">
 </head>
+
 <body>
-    <div id="snake-game"></div>
-    
+    <div class="center">
+        <h1>Will u snake?</h1>
+        <p>use <b> up + down + left + right</b> arrow keys</p>
+        <p>press <b>enter</b> to start and stop</p>
+        <div class="buttons">
+            <div>
+                Timer: <span id="timer">0</span>
+            </div>
+            <div>
+                Score: <span id="score">0</span>
+            </div>
+        </div>
+        <div id="snake-game"></div>
+        <footer>by @naveennvrgup</footer>
+    </div>
+
     <script src="./d3.min.js"></script>
     <script src="./game.js"></script>
 </body>
+
 </html>
