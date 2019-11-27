@@ -1,0 +1,13 @@
+#snake-game{
+    background: #ddd;
+    width: 450px;
+    height: 450px;
+}
+
+.circle{
+    fill: red;
+}
+
+.cell{
+    fill: #000;
+}

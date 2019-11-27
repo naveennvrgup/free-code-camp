@@ -27,6 +27,7 @@ My fcc handle is - [**naveensundar@fcc**](https://www.freecodecamp.org/fcc4875e2
 1. [wiki viewer](https://naveennvrgup.github.io/free-code-camp/)
 
 ## D3.js projects
+1. [snake-game](https://naveennvrgup.github.io/free-code-camp/)
 1. [bar-chart](https://naveennvrgup.github.io/free-code-camp/)
 1. [heatmap](https://naveennvrgup.github.io/free-code-camp/)
 1. [scatter-plot](https://naveennvrgup.github.io/free-code-camp/)
